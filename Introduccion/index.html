@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer sitio web con tailwindcss</title>
+    <!-- instalacion con cdn 
+        que no se puede hacer con cdn :
+
+You can't customize Tailwind's default theme
+You can't use any directives like @apply, @variants, etc.
+You can't enable features like group-hover
+You can't install third-party plugins
+You can't tree-shake unused styles
+    -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- centro el container con margin x auto -->
+    <div class="container  mx-auto">
+    <!-- tailwind tiene estilos predeterminados entre eso todos los titulos
+        tienen el mismo tamaño para que se pueda personalizar  -->
+    <h1>Hola Mundo con Tailwind</h1>
+    <h2>Hola Mundo con Tailwind</h2>
+    <!-- creacion de boton 
+        clase de utilidad -> color -> intensidad del color  
+    bg-blue-500 -> color de fondo 
+    hover:bg-blue-700 -> al dar click 
+    text-white -> color de texto del boton 
+    py -> padding arriba y abajo (eje Y |)
+    px -> padding hacia los lados (eje X -)
+    rounded -> borde redondeado 
+
+    Responsive 
+    sm -> small 
+    @media(min-width 640px)
+    md -> Medium 
+    @media(min-width 768px)
+    lg -> large
+    @media(min-width 1024px)
+    xl -> extra large 
+    @media(min-width 1280px)
+si no asignamos un valor lo toma por default y se mantiene en todas las 
+pantallas 
+-->
+<button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded ">mi botton</button>
+</div>
+</body>
+</html>
