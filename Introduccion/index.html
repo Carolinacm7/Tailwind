@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,14 +17,19 @@ You can't tree-shake unused styles
     -->
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- centro el container con margin x auto -->
-    <div class="container  mx-auto">
-    <!-- tailwind tiene estilos predeterminados entre eso todos los titulos
+    <div class="container  mx-auto mt-5">
+        <!-- tailwind tiene estilos predeterminados entre eso todos los titulos
         tienen el mismo tamaño para que se pueda personalizar  -->
-    <h1>Hola Mundo con Tailwind</h1>
-    <h2>Hola Mundo con Tailwind</h2>
-    <!-- creacion de boton 
+        <h1 class="text-green-800 text-4xl text-center shadow-lg ">Hola Mundo con Tailwind</h1>
+        <h2 class="text-right">Hola soy un titulo a la derecha</h2>
+        <h3 class="uppercase">hola me transforme a mayusculas </h3>
+        <h4 class="capitalize">hola me transforme a mayuscula mi primera letra </h4>
+        <h5 class="bg-pink-500 text-white text-center py-10 px-5 m-5 rounded-lg">Hola cambie mi fondo y color de letras
+        </h5>
+        <!-- creacion de boton 
         clase de utilidad -> color -> intensidad del color  
     bg-blue-500 -> color de fondo 
     hover:bg-blue-700 -> al dar click 
@@ -31,7 +37,7 @@ You can't tree-shake unused styles
     py -> padding arriba y abajo (eje Y |)
     px -> padding hacia los lados (eje X -)
     rounded -> borde redondeado 
-
+para radius es rounded- se usan las mismas medidas  sm md xl
     Responsive 
     sm -> small 
     @media(min-width 640px)
@@ -43,8 +49,64 @@ You can't tree-shake unused styles
     @media(min-width 1280px)
 si no asignamos un valor lo toma por default y se mantiene en todas las 
 pantallas 
+
+para añadir una margen uso m se genera en todos los lados 
+mb -> margin bottom 
+mt -> margin top 
+mr ->margin para la derecha 
+ml -> para la izquierda 
+mx -> para los dos lados 
+my -> arriba y abajo 
+igual con el padding solo que usamos p 
 -->
-<button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded ">mi botton</button>
-</div>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded mt-5 ">mi botton</button>
+        <div class="m-5 border p-5">
+
+            <!-- como añadir tamaño a la fuente 
+                simmpre tengo que añadir el txt del mas pequeño 
+                en este caso es text-base que equivale a 1 rem 
+            -->
+            <p class="text-base sm:text-lg text-blue-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Soluta cum amet, ad illum debitis harum. Esse
+                eaque sint nemo debitis iste dicta! Ipsam nam
+                a consequatur laboriosam facilis commodi sapiente.</p>
+            <hr>
+            <p class="text-base sm:text-lg text-blue-500 text-right">Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit.
+                Soluta cum amet, ad illum debitis harum. Esse
+                eaque sint nemo debitis iste dicta! Ipsam nam
+                a consequatur laboriosam facilis commodi sapiente.</p>
+            <hr>
+            <p class="text-base sm:text-lg text-blue-500 text-center">Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit.
+                Soluta cum amet, ad illum debitis harum. Esse
+                eaque sint nemo debitis iste dicta! Ipsam nam
+                a consequatur laboriosam facilis commodi sapiente.</p>
+        </div>
+
+        <!-- para establecer un ancho se usa w
+        w 48 -> equivale a 12 rem
+    si lo uso con / es para flexbox-->
+        <h5 class="w-48  bg-pink-500 text-white text-center py-10 px-5 m-5 rounded-lg ">Hola soy una carta </h5>
+    </div>
+    </div>
+    <div class="container m-auto ">
+        <div class="max-w-sm border shadow">
+            <div class="px-6 py-4">
+            <img src="https://soyivettecastro.com/wp-content/uploads/2019/03/LA-FELICIDAD-scaled.jpg" alt="felicidad">
+            <h1 class="text-center my-2">la felicidad </h1>
+            <p class="ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nulla placeat ipsam
+                laudantium. Sunt laborum ad, placeat impedit itaque minima exercitationem voluptate ullam, sapiente
+                consequuntur neque perspiciatis consequatur autem atque.</p>
+            </div>
+                <div class="text-center">
+                <span class="bg-gray-400 rounded-lg px-2 ">#photografy</span>
+                <span class="bg-gray-400 rounded-lg px-2">#travel</span>
+                <span class="bg-gray-400 rounded-lg px-2">#whiter</span>
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>

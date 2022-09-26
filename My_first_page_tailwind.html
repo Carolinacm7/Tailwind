@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900">
+    <!-- Menu -->
+    <nav class="flex sm:justify-center items-center justify-around flex-wrap bg-gray-500 p-2 ">
+        <div class="flex  items-center justify-center  flex-shrink-0 mx-5">
+            <img src="https://i.pinimg.com/550x/eb/11/0e/eb110e83721df8fe39636488b0d414de.jpg"
+                class=" object-contain object-center  h-10 rounded-full flex-wrap">
+            <span
+                class="font-semibold italic text-sm  text-2xl bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-blue-700 to-gray-900 mx-5 flex-wrap">You're
+                Beautiful</span>
+        </div>
+
+        <div class="block lg:hidden">
+            <button id='boton'
+                class="flex items-center px-3 py-2 m-5 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+        <div id='menu' class="w-full block flex-grow font-serif  lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow flex  lg:flex-row  sm:flex-col ">
+                <a href="#Sinopsis" class="block mt-4 lg:inline-block  lg:mt-0 text-gray-700 hover:text-gray-200 mr-4">
+                    Sinopsis
+                </a>
+                <a href="#responsive-header"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-200 mr-4">
+                    Reparto
+                </a>
+                <a href="#responsive-header"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-200">
+                    Canciones
+                </a>
+            </div>
+            <div>
+                <a href="#"
+                    class="inline-block text-sm px-4 py-2 leading-none border rounded-full text-white border-white hover:border-transparent hover:text-gray-700 hover:bg-white mt-4 lg:mx-10 lg:mt-0">Ver
+                    Dorama</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Sinopsis  -->
+    <section class="flex md:flex-row md:justify-around sm:flex-col-reverse sm:align-item-center ">
+        <article id="Sinopsis" class="flex flex-grow-0 flex-col justify-center lg:w-1/2  font-serif sm:mx-10">
+            <h1
+                class="bg-clip-text font-semibold italic text-transparent bg-gradient-to-r from-gray-200 via-blue-200 to-gray-200 text-2xl p-10 text-center sm:align-item-center ">
+                Sinopsis</h1>
+            <p class="text-justify text-gray-500 ">Tae Kyung y On Yu están buscando un muevo miembro para su grupo
+                musical A.N.JELL.
+                Go Mi Nam es el elegido pero sufre un "accidente". Así que Mi Nyu, su hermana gemela, entra en escena
+                para suplantar a su hermano.
+            </p>
+        </article>
+        <article class="lg:ml-20 flex align-item lg:w-1/2 ms:p-10">
+            <img src="https://1.viki.io/c/442c/You're_Beautiful_2_.jpg?x=b&s=960x540&e=t&q=g" alt="grupo_an-jell"
+                class="shadow-2xl rounded  object-contain lg:ml-10">
+        </article>
+    </section>
+    <!-- Reparto -->
+    <section class="container m-10 flex flex-col text-center font-serif sm:flex-col  ">
+        <h1
+            class="bg-clip-text  font-semibold italic text-transparent bg-gradient-to-r from-gray-200 via-blue-200 to-gray-200 text-2xl my-5">
+            Reparto</h1>
+        <!-- card 1 -->
+        <div class="flex  justify-around sm:flex-col sm:items-center ">
+            <!-- park -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg sm:my-5 ">
+            <div class="flex flex-col bg-gray-200 w-40 rounded sm:w-64 ">
+                <img class="object-fill h-56 mt-2 rounded sm:h-auto "
+                    src="https://s2.best-wallpaper.net/wallpaper/iphone/1609/Park-Shin-Hye-08_iphone_320x480.jpg"
+                    alt="Sunset in the mountains">
+                <div class="font-bold text-xl sm:text-4xl ">park shin hye</div>
+                <div class="italic font-semibold text-xs sm:text-lg">Go Mi Nam-Go Mi Nyu</div>
+            </div>
+        </div>
+        <!-- jeun  -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg sm:my-5">
+            <div class="flex flex-col bg-gray-200 w-40 rounded sm:w-64 ">
+                <img class="object-fill mt-2 rounded h-56 sm:h-auto "
+                    src="https://i.pinimg.com/originals/e9/49/10/e949100f7aa49b2a88d07720ee168531.jpg"
+                    alt="Sunset in the mountains">
+                <div class="font-bold text-xl sm:text-4xl  ">Jang Geun Suk</div>
+                <div class="italic font-semibold text-xs text-lg">Hwang Tae Kyung</div>
+            </div>
+        </div>
+<!-- lee hon -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg sm:my-5">
+            <div class="flex flex-col bg-gray-200 w-40 rounded sm:w-64 ">
+                <img class="object-fill h-56 mt-2 rounded sm:h-auto"
+                    src="https://i.pinimg.com/236x/ef/39/85/ef3985d140fc55c9d44105d06c0a7739--ft-island-ki.jpg"
+                    alt="Sunset in the mountains">
+                <div class="font-bold text-xl sm:text-4xl">Lee Hong Gi</div>
+                <div class="italic font-semibold text-xs sm:text-lg">Jeremy</div>
+            </div>
+        </div>
+        <!-- yong -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg sm:my-5">
+            <div class="flex flex-col bg-gray-200 w-40 rounded sm:w-64">
+                <img class="object-fill h-56 mt-2 rounded sm:h-auto "
+                    src="https://i.pinimg.com/236x/c4/5a/c4/c45ac4f473de7661f0e8565effc8fcd7--jung-yong-hwa-blue.jpg"
+                    alt="Sunset in the mountains">
+                <div class="font-bold text-xl sm:text-4xl">Yong Hwa </div>
+                <div class="italic font-semibold text-xs sm:text-lg"> Kang Shin Woo</div>
+            </div>
+            <!-- UEE -->
+        </div>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg sm:my-5">
+            <div class="flex flex-col bg-gray-200 w-40 rounded sm:w-64">
+                <img class="object-fill h-56 mt-2 rounded sm:h-auto"
+                    src="https://pm1.narvii.com/6174/d137d316eca3a6cf64c5b9fa5778982bee269f24_hq.jpg"
+                    alt="Sunset in the mountains">
+                <div class="font-bold text-xl sm:text-4xl">UEE</div>
+                <div class="italic font-semibold text-xs sm:text-lg">Yoo He Yi (Hada Falsa)</div>
+            </div>
+        </div>
+    </div>
+        
+    </section>
+</body>
+<!-- Menu resposive -->
+<script>
+    const boton = document.querySelector('#boton');
+    const menu = document.querySelector('#menu');
+
+    boton.addEventListener('click', () => {
+        console.log('click')
+        menu.classList.toggle('hidden')
+    })
+</script>
+
+</html>
